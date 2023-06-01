@@ -22,19 +22,22 @@ const Home = () => {
 
   return (
     <>
-      <div className="home-container"></div>
-      <h1>Ma super page de recherche</h1>
-      <div className="countries-container">
-        {countries.map((country) => {
-          return (
-            <div key={country.ccn3}>
-              <div className="flag">{country.flag}</div>
-              <div className="continent">{country.continents}</div>
-              <p>Liste des langues parlées :</p>
-              {/* <p>{...Object.values(country.languages)}</p> */}
-            </div>
-          );
-        })}
+      <div className="home-container">
+        <h1>Ma super page de recherche</h1>
+        <div className="countries-container">
+          {countries.map((country) => {
+            return (
+              <div key={country.ccn3}>
+                <div className="flag">{country.flag}</div>
+                <div className="continent">{country.continents}</div>
+                <p>Liste des langues parlées :</p>
+                {/* <ul>
+                {country.languages.Object.values.map()}
+              </ul> */}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );
