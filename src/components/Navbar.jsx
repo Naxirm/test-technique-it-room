@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   const toggleNavbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link className="logo" to="/">
-        <img src="" alt="logo" />
+        <img src={logo} alt="logo" />
       </Link>
       <Link className="toggle-button" onClick={() => toggleNavbar()}>
         <span className="bar"></span>
